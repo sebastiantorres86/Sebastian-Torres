@@ -393,7 +393,7 @@ html {
 
 body {
   color: #4c4e61;
-  background: #fafafa;
+  background: #f8f8f8;
   font-size: 1rem;
 }
 
@@ -444,7 +444,7 @@ h3:not(:first-child) {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 h2 {
@@ -788,6 +788,16 @@ dd {
   height: auto;
 }
 
+.full-image {
+  width: 100%;
+  height: auto;
+}
+
+.static-preview-image {
+  max-width: 500px;
+  height: auto;
+}
+
 .show {
   display: block !important;
 }
@@ -830,6 +840,14 @@ dd {
 
 .margin-bottom {
   margin-bottom: 3rem;
+}
+
+.margin-right {
+  margin-right: 2rem;
+}
+
+.margin-left {
+  margin-left: 2rem;
 }
 
 .alternate-background {
@@ -1162,6 +1180,12 @@ caption {
   display: none;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 600px) {
   .toggle-button {
     display: -webkit-box;
@@ -1216,6 +1240,15 @@ nav a {
   height: auto;
 }
 
+.briefing {
+  font-weight: 600;
+  color: #29de7d;
+}
+
+.grey {
+  color: #a3a5ae;
+}
+
 .call-to-action {
   padding-right: 2rem;
   padding-left: 2rem;
@@ -1245,6 +1278,18 @@ footer .container, footer .small-container, footer .medium-container {
           align-items: center;
 }
 
+footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 footer .footer-nav a,
 footer .footer-social a {
   color: #fff;
@@ -1256,6 +1301,11 @@ footer .footer-social a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .next-projects .flex-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer-nav,
   .footer-social {
@@ -1289,8 +1339,10 @@ footer .footer-social a {
 /* Media Queries */
 @media (min-width: 600px) {
   .about-me,
-  .call-to-action {
-    margin-top: 9rem;
+  .call-to-action,
+  .brief,
+  .next-projects {
+    margin-top: 5rem;
   }
   .call-to-action {
     padding-right: 0;
@@ -1305,7 +1357,7 @@ footer .footer-social a {
     position: absolute;
     bottom: 0;
     width: 35%;
-    background-color: #fafafa;
+    background-color: #f8f8f8;
   }
   footer div div a {
     margin-left: 2rem;
